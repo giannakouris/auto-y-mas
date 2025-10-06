@@ -2,8 +2,8 @@
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
-  background: #f5f5f5;
-  color: #222;
+  background: #121212; /* donker */
+  color: #e0e0e0; /* lichtgrijs */
 }
 
 /* Container */
@@ -16,50 +16,51 @@ body {
 
 /* HEADER */
 header {
-  background: #004aad;
-  color: white;
+  background: #0d47a1; /* diepblauw */
+  color: #ffffff;
   text-align: center;
-  padding: 50px 20px;
+  padding: 60px 20px;
 }
 
 header h1 {
   margin: 0 0 10px;
-  font-size: 2.5em;
+  font-size: 2.8em;
 }
 
 header p {
   font-size: 1.2em;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 header .btn {
   display: inline-block;
-  padding: 12px 25px;
-  background: #ffd700;
-  color: #004aad;
+  padding: 14px 30px;
+  background: #1976d2;
+  color: white;
   font-weight: bold;
   text-decoration: none;
-  border-radius: 6px;
+  border-radius: 8px;
   transition: 0.3s;
 }
 
 header .btn:hover {
-  background: #ffcc00;
+  background: #42a5f5;
 }
 
 /* SECTIONS */
 section {
-  background: white;
+  background: #1e1e1e;
   margin: 20px 0;
-  padding: 40px 20px;
+  padding: 50px 20px;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
   text-align: center;
 }
 
 section h2 {
-  color: #004aad;
-  margin-bottom: 20px;
+  color: #42a5f5;
+  margin-bottom: 30px;
+  font-size: 2em;
 }
 
 /* CARDS */
@@ -71,23 +72,66 @@ section h2 {
 }
 
 .card {
-  background: #f9f9f9;
-  padding: 15px;
+  background: #272727;
+  padding: 20px;
   border-radius: 12px;
-  width: 250px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  width: 260px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.7);
 }
 
 .card img {
   width: 100%;
   border-radius: 12px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  color: #64b5f6;
+  margin-bottom: 8px;
+}
+
+.card p {
+  color: #b0bec5;
+}
+
+/* LINKS */
+a {
+  color: #42a5f5;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #90caf9;
 }
 
 /* FOOTER */
 footer {
   text-align: center;
-  background: #222;
+  background: #0d47a1;
   color: white;
-  padding: 20px 0;
+  padding: 25px 0;
+  font-size: 0.9em;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header h1 {
+    font-size: 2em;
+  }
+
+  section {
+    padding: 40px 15px;
+  }
 }
