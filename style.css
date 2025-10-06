@@ -1,11 +1,12 @@
-/* BASIS STIJL */
+/* BASIS */
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
-  background: #121212; 
-  color: #e0e0e0; 
+  background: #121212; /* zwart/donker */
+  color: #e0e0e0; /* lichtgrijs */
 }
 
+/* Container */
 .container {
   width: 90%;
   max-width: 1200px;
@@ -15,7 +16,7 @@ body {
 
 /* HEADER */
 header {
-  background: #0d47a1; 
+  background: #0d47a1; /* blauw */
   color: #ffffff;
   text-align: center;
   padding: 60px 20px;
@@ -23,7 +24,7 @@ header {
 
 header h1 {
   margin: 0 0 10px;
-  font-size: 2.8em;
+  font-size: 2.5em;
 }
 
 header p {
@@ -34,7 +35,7 @@ header p {
 header .btn {
   display: inline-block;
   padding: 14px 30px;
-  background: #1976d2;
+  background: #1976d2; /* accent blauw */
   color: white;
   font-weight: bold;
   text-decoration: none;
@@ -46,27 +47,18 @@ header .btn:hover {
   background: #42a5f5;
 }
 
-/* SECTIONS */
+/* SECTIES */
 section {
-  background: #1e1e1e;
+  background: #1e1e1e; /* donker sectie */
   margin: 20px 0;
-  padding: 50px 20px;
+  padding: 40px 20px;
   border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
-  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
 }
 
 section h2 {
-  color: #42a5f5;
-  margin-bottom: 30px;
-  font-size: 2em;
-}
-
-section ul {
-  text-align: left;
-  display: inline-block;
-  margin: 0;
-  padding-left: 20px;
+  color: #42a5f5; /* blauw accent */
+  margin-bottom: 20px;
 }
 
 /* CARDS */
@@ -82,24 +74,23 @@ section ul {
   padding: 20px;
   border-radius: 12px;
   width: 260px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.6);
-  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+  transition: transform 0.3s;
 }
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.7);
 }
 
 .card img {
   width: 100%;
   border-radius: 12px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .card h3 {
   color: #64b5f6;
-  margin-bottom: 8px;
+  margin-bottom: 5px;
 }
 
 .card p {
@@ -119,11 +110,10 @@ a:hover {
 
 /* FOOTER */
 footer {
-  text-align: center;
   background: #0d47a1;
   color: white;
-  padding: 25px 0;
-  font-size: 0.9em;
+  text-align: center;
+  padding: 20px 0;
 }
 
 /* RESPONSIVE */
@@ -131,13 +121,5 @@ footer {
   .cards {
     flex-direction: column;
     align-items: center;
-  }
-
-  header h1 {
-    font-size: 2em;
-  }
-
-  section {
-    padding: 40px 15px;
   }
 }
