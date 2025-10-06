@@ -2,7 +2,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
-  background: #0d0d0d; /* donker zwart/grijs */
+  background: #0d0d0d;
   color: #e0e0e0;
 }
 
@@ -16,7 +16,7 @@ body {
 
 /* HEADER */
 header {
-  background: #0d47a1; /* diep blauw */
+  background: #0d47a1;
   color: #ffffff;
   text-align: center;
   padding: 60px 20px;
@@ -35,7 +35,7 @@ header p {
 header .btn {
   display: inline-block;
   padding: 14px 30px;
-  background: #25D366; /* groen accent */
+  background: #25D366;
   color: white;
   font-weight: bold;
   text-decoration: none;
@@ -44,120 +44,10 @@ header .btn {
 }
 
 header .btn:hover {
-  background: #128C7E; /* donkerder groen */
+  background: #128C7E;
 }
 
 /* SECTIES */
 section {
   background: #1e1e1e;
   margin: 20px 0;
-  padding: 50px 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
-  text-align: center;
-}
-
-section h2 {
-  color: #42a5f5; /* blauw accent */
-  margin-bottom: 30px;
-}
-
-/* LIJSTEN */
-ul {
-  text-align: left;
-  display: inline-block;
-  padding-left: 20px;
-}
-
-/* AUTO KAARTEN */
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-  margin-top: 20px;
-}
-
-.card {
-  background: #272727;  
-  border-radius: 15px;
-  overflow: hidden;
-  width: 300px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.7);
-  transition: transform 0.3s, box-shadow 0.3s;
-  text-align: center;
-  padding-bottom: 20px;
-}
-
-.card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 25px rgba(0,0,0,0.8);
-}
-
-.card img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  display: block;
-}
-
-.card h3 {
-  color: #42a5f5; 
-  margin: 12px 0 6px;
-  font-size: 1.3em;
-}
-
-.card p {
-  color: #b0bec5;
-  margin: 0 0 6px;
-  font-size: 1em;
-}
-
-.card .price {
-  font-weight: bold;
-  color: #25D366; /* groen prijs */
-  font-size: 1.2em;
-  margin-bottom: 12px;
-}
-
-/* WhatsApp knop */
-.card .btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background: #25D366; 
-  color: #ffffff;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: bold;
-  transition: 0.3s;
-  margin-bottom: 10px;
-}
-
-.card .btn:hover {
-  background: #128C7E;
-}
-
-/* FOOTER */
-footer {
-  background: #0d47a1; 
-  color: white;
-  text-align: center;
-  padding: 20px 0;
-  font-size: 0.9em;
-}
-
-/* RESPONSIVE */
-@media(max-width: 768px) {
-  .cards {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  header h1 {
-    font-size: 2em;
-  }
-
-  section {
-    padding: 40px 15px;
-  }
-}
