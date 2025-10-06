@@ -2,8 +2,8 @@
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
-  background: #121212; /* donker achtergrond */
-  color: #e0e0e0;     /* lichte tekst */
+  background: #0d0d0d; /* donker zwart/grijs */
+  color: #e0e0e0;
 }
 
 /* CONTAINER */
@@ -35,7 +35,7 @@ header p {
 header .btn {
   display: inline-block;
   padding: 14px 30px;
-  background: #1976d2;
+  background: #25D366; /* groen accent */
   color: white;
   font-weight: bold;
   text-decoration: none;
@@ -44,12 +44,12 @@ header .btn {
 }
 
 header .btn:hover {
-  background: #42a5f5;
+  background: #128C7E; /* donkerder groen */
 }
 
 /* SECTIES */
 section {
-  background: #1e1e1e; /* donkergrijs secties */
+  background: #1e1e1e;
   margin: 20px 0;
   padding: 50px 20px;
   border-radius: 12px;
@@ -79,7 +79,7 @@ ul {
 }
 
 .card {
-  background: #272727;  /* donkere kaart */
+  background: #272727;  
   border-radius: 15px;
   overflow: hidden;
   width: 300px;
@@ -87,7 +87,6 @@ ul {
   transition: transform 0.3s, box-shadow 0.3s;
   text-align: center;
   padding-bottom: 20px;
-  position: relative;
 }
 
 .card:hover {
@@ -102,22 +101,21 @@ ul {
   display: block;
 }
 
-/* Auto info */
 .card h3 {
-  color: #42a5f5; /* blauw */
+  color: #42a5f5; 
   margin: 12px 0 6px;
   font-size: 1.3em;
 }
 
 .card p {
-  color: #b0bec5; /* lichtgrijs */
+  color: #b0bec5;
   margin: 0 0 6px;
   font-size: 1em;
 }
 
 .card .price {
   font-weight: bold;
-  color: #ffd700; /* goud */
+  color: #25D366; /* groen prijs */
   font-size: 1.2em;
   margin-bottom: 12px;
 }
@@ -126,7 +124,7 @@ ul {
 .card .btn {
   display: inline-block;
   padding: 10px 20px;
-  background: #25D366; /* WhatsApp groen */
+  background: #25D366; 
   color: #ffffff;
   text-decoration: none;
   border-radius: 8px;
@@ -141,7 +139,7 @@ ul {
 
 /* FOOTER */
 footer {
-  background: #0d47a1;
+  background: #0d47a1; 
   color: white;
   text-align: center;
   padding: 20px 0;
