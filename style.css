@@ -1,50 +1,36 @@
-/* Auto kaarten */
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px; /* ruimte tussen de kaarten */
-  margin-top: 20px;
+/* ALGEMEEN */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  background: #121212;
+  color: #e0e0e0;
 }
 
-.card {
-  background: #1e1e1e; /* donker grijs voor kaart */
-  border-radius: 15px;
-  overflow: hidden;
-  width: 280px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.7);
-  transition: transform 0.3s, box-shadow 0.3s;
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px 0;
+}
+
+/* HEADER */
+header {
+  background: #0d47a1;
+  color: #ffffff;
   text-align: center;
-  cursor: pointer;
+  padding: 60px 20px;
 }
 
-.card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 25px rgba(0,0,0,0.8);
+header h1 {
+  margin: 0 0 10px;
+  font-size: 2.5em;
 }
 
-.card img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover; /* foto vult hele ruimte mooi */
-  display: block;
-}
-
-.card h3 {
-  color: #42a5f5; /* blauw accent */
-  margin: 12px 0 6px;
-  font-size: 1.3em;
-}
-
-.card p {
-  color: #b0bec5; /* lichtgrijs voor details */
-  margin: 0 0 6px;
-  font-size: 1em;
-}
-
-.card .price {
-  font-weight: bold;
-  color: #ffd700; /* goudkleurige prijs */
+header p {
   font-size: 1.2em;
-  margin-bottom: 12px;
+  margin-bottom: 25px;
 }
+
+header .btn {
+  display: inline-block;
+  paddi
