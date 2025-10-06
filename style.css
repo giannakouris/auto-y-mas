@@ -1,20 +1,50 @@
-.card .price {
-  font-weight: bold;
-  color: #ffd700; /* goudkleurige prijs */
-  margin-top: 8px;
-  font-size: 1.1em;
+/* Auto kaarten */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px; /* ruimte tussen de kaarten */
+  margin-top: 20px;
 }
 
 .card {
-  background: #272727;
-  padding: 20px;
-  border-radius: 12px;
-  width: 260px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.6);
-  transition: transform 0.3s;
+  background: #1e1e1e; /* donker grijs voor kaart */
+  border-radius: 15px;
+  overflow: hidden;
+  width: 280px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.7);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+  cursor: pointer;
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.8);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover; /* foto vult hele ruimte mooi */
+  display: block;
+}
+
+.card h3 {
+  color: #42a5f5; /* blauw accent */
+  margin: 12px 0 6px;
+  font-size: 1.3em;
+}
+
+.card p {
+  color: #b0bec5; /* lichtgrijs voor details */
+  margin: 0 0 6px;
+  font-size: 1em;
+}
+
+.card .price {
+  font-weight: bold;
+  color: #ffd700; /* goudkleurige prijs */
+  font-size: 1.2em;
+  margin-bottom: 12px;
 }
