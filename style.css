@@ -1,72 +1,8 @@
-/* BASIS */
-body {
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
-  background: #121212; /* zwart/donker */
-  color: #e0e0e0; /* lichtgrijs */
-}
-
-/* Container */
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
-  padding: 20px 0;
-}
-
-/* HEADER */
-header {
-  background: #0d47a1; /* blauw */
-  color: #ffffff;
-  text-align: center;
-  padding: 60px 20px;
-}
-
-header h1 {
-  margin: 0 0 10px;
-  font-size: 2.5em;
-}
-
-header p {
-  font-size: 1.2em;
-  margin-bottom: 25px;
-}
-
-header .btn {
-  display: inline-block;
-  padding: 14px 30px;
-  background: #1976d2; /* accent blauw */
-  color: white;
+.card .price {
   font-weight: bold;
-  text-decoration: none;
-  border-radius: 8px;
-  transition: 0.3s;
-}
-
-header .btn:hover {
-  background: #42a5f5;
-}
-
-/* SECTIES */
-section {
-  background: #1e1e1e; /* donker sectie */
-  margin: 20px 0;
-  padding: 40px 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
-}
-
-section h2 {
-  color: #42a5f5; /* blauw accent */
-  margin-bottom: 20px;
-}
-
-/* CARDS */
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+  color: #ffd700; /* goudkleurige prijs */
+  margin-top: 8px;
+  font-size: 1.1em;
 }
 
 .card {
@@ -80,46 +16,5 @@ section h2 {
 
 .card:hover {
   transform: translateY(-5px);
-}
-
-.card img {
-  width: 100%;
-  border-radius: 12px;
-  margin-bottom: 10px;
-}
-
-.card h3 {
-  color: #64b5f6;
-  margin-bottom: 5px;
-}
-
-.card p {
-  color: #b0bec5;
-}
-
-/* LINKS */
-a {
-  color: #42a5f5;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-a:hover {
-  color: #90caf9;
-}
-
-/* FOOTER */
-footer {
-  background: #0d47a1;
-  color: white;
-  text-align: center;
-  padding: 20px 0;
-}
-
-/* RESPONSIVE */
-@media(max-width: 768px) {
-  .cards {
-    flex-direction: column;
-    align-items: center;
-  }
+  box-shadow: 0 8px 20px rgba(0,0,0,0.7);
 }
